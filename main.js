@@ -6,7 +6,7 @@ const asistentes = [];
 // Función para validar si una persona cumple los requisitos
 function validarRequisitos(edad, ciudad) {
     return edad >= 18 && ciudad.toLowerCase() === "madrid";
-}
+};
 
 // Función para registrar un asistente
 function registrarAsistente() {
@@ -22,7 +22,7 @@ function registrarAsistente() {
     } else {
         alert("Lo sentimos, no cumple con los requisitos para obtener una entrada.");
     }
-}
+};
 
 // Función para mostrar la lista de asistentes
 function mostrarAsistentes() {
@@ -34,7 +34,7 @@ function mostrarAsistentes() {
             console.log(`${index + 1}. ${asistente.nombre}, ${asistente.edad} años, residente en ${asistente.ciudad}.`);
         });
     }
-}
+};
 
 // Ejecutar el proceso de registro
 registrarAsistente();
